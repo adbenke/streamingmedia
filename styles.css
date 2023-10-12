@@ -1,0 +1,21 @@
+* {
+    font-family:Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin:0 auto;
+}
+h1{
+    font-size:1.25em;
+}
+h2,h3{
+    font-size:1em;
+}
+ul li:first-child{
+    font-variant:small-caps;
+}
+p,dl,dd{
+    font-size:1em;
+}
+footer p{
+    font-size:0.75em;
+}
