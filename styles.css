@@ -19,3 +19,13 @@ p,dl,dd{
 footer p{
     font-size:0.75em;
 }
+
+
+
+@media screen and (min-width:375px){
+
+}
+
+@media screen and (min-width:834px){
+
+}
