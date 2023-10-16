@@ -3,6 +3,7 @@ body{
     background-color:#020659;    
     margin:0 auto;
     max-width: 834px;
+    display: grid;
 }
 header{
     color:#fff;
@@ -10,7 +11,7 @@ header{
     padding:5px 25px;
 }
 main{
-    background-color: #fff;    
+    background-color: #fff;
 }
 h1{
     font-size:1.25em;
@@ -20,6 +21,7 @@ h2,h3{
     font-size:1em;
     text-transform:uppercase;
 }
+
 nav ul{
     text-transform:uppercase;
     display:flex;
