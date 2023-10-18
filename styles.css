@@ -2,7 +2,7 @@ body{
     font-family:Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
     background-color:#020659;    
     margin:0 auto;
-    max-width: 834px;
+    max-width:375px;
     display: grid;
 }
 header{
@@ -30,15 +30,18 @@ nav h2{
     visibility:hidden;
     height:1px;
 }
-
 ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
     list-style:none;
 }
-nav li{
+li{
     padding-right:30px;
+}
+a{
+    text-decoration: none;
+    color:#fff;
 }
 [href="#home"]{
     text-transform:capitalize;
@@ -137,7 +140,15 @@ audio{
     margin: 10px 0 30px 32px;
 }
 .more:hover{
-
+    text-decoration:none;
+    background-color: #590242;
+    color:#fff;
+    border-radius:5px;
+    padding:10px;
+    width:150px;
+    display:block;
+    text-align:center;
+    margin:10px 0 30px 32px;
 }
 audio::-webkit-media-controls-mute-button {
     background-color: #fff;
@@ -164,16 +175,17 @@ audio::-webkit-media-controls-enclosure {
     background:#020659;
 }
 #yourPlaylists ::-webkit-scrollbar, #curatedPlaylists ::-webkit-scrollbar {
-
+    width:15px;
 }
 #yourPlaylists ::-webkit-scrollbar-track, #curatedPlaylists ::-webkit-scrollbar-track  {
-
+    box-shadow: inset 0 0 15px #020659;
 }
 #yourPlaylists ::-webkit-scrollbar-thumb, #curatedPlaylists ::-webkit-scrollbar-thumb {
-
+    background:#020659;
+    border-radius:5px;
 }
 #yourPlaylists ::-webkit-scrollbar-thumb:hover, #curatedPlaylists ::-webkit-scrollbar-thumb:hover {
-    
+    background: #fff;
 }
 #trendingSongs{
     color:#590242;
@@ -202,8 +214,11 @@ footer p{
 
 
 /* MEDIA QUERY */
-
-@media screen and (min-width:834px){
+@media screen and (min-width:375px){
+    body{
+        margin: 0 auto;
+        width:834px;
+    }
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
