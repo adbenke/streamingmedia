@@ -46,6 +46,11 @@ ul {
 }
 li{
     padding-right:30px;
+    text-align: center;
+    padding: 10px 0;
+}
+li:hover{
+    background-color: #590242;
 }
 a{
     text-decoration: none;
@@ -56,7 +61,7 @@ a{
     font-variant:small-caps;
     font-weight:bold;
     position:absolute;
-    bottom: 55px;
+    bottom:55px;
     left:140px;
 }
 label {
@@ -130,9 +135,13 @@ p,dl,dd{
 }
 dl{
     display:flex;
+    position:relative;
+    bottom:10px;
 }
 dt{
     padding-right:5px;
+    position:relative;
+    bottom:10px;
 }
 audio{
     position:absolute;
