@@ -1,9 +1,12 @@
+html{
+    background-color:#020659;      
+}
 body{
     font-family:Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
-    background-color:#020659;    
     margin:0 auto;
-    max-width:375px;
+    background-color:#fff;     
     display: grid;
+    width:375px;
 }
 header{
     color:#fff;
@@ -12,10 +15,14 @@ header{
 }
 main{
     background-color: #fff;
+    width:375px;
 }
 h1{
     font-size:1.25em;
     text-transform:uppercase;
+}
+h2{
+    padding:15px 15px 0px 40px;    
 }
 h2,h3{
     font-size:1em;
@@ -23,6 +30,7 @@ h2,h3{
 }
 nav{
     grid-row:1/2;
+    background-color:#020873;   
     text-transform:uppercase;
     position:relative; 
 }
@@ -46,7 +54,10 @@ a{
 [href="#home"]{
     text-transform:capitalize;
     font-variant:small-caps;
-    font-weight:bold;;
+    font-weight:bold;
+    position:absolute;
+    bottom: 55px;
+    left:140px;
 }
 label {
     cursor: pointer;
@@ -133,7 +144,7 @@ audio{
     background-color: #590242;
     color:#fff;
     border-radius: 5px;
-    padding:10px;
+    padding: 10px;
     width:150px;
     display:block;
     text-align:center;
@@ -192,29 +203,43 @@ audio::-webkit-media-controls-enclosure {
 }
 #yourPlaylists{
     background-color:#2699FB;
+    display:flex;
+}
+#yourPlaylists h2{
+    background-color:#fff;
 }
 #yourPlaylists section{
     background-color: #0D8DFB;
-    padding:5px;
+    margin:10px;
+    padding:10px;
     color:#fff;
-    display:flex;
+    display:grid;
+    text-align: center;
 }
 #curatedPlaylists{
     background-color:#030A8C;
+    display:flex;
+}
+#curatedPlaylists h2{
+    background-color:#fff;
 }
 #curatedPlaylists section{
     background-color:#020873;
-    padding:5px;
+    margin:10px;
+    padding:10px;
     color:#fff;
-    display:flex;
+    display:grid;
+    text-align: center;
 }
 footer p{
     font-size:0.75em;
+    text-align: center;
+    color:#590242;
 }
 
 
 /* MEDIA QUERY */
-@media screen and (min-width:375px){
+@media screen and (min-width:500px){
     body{
         margin: 0 auto;
         width:834px;
@@ -222,6 +247,7 @@ footer p{
     main{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width:834px;
     }
     #trendingSongs{
         grid-column: 1/3;
