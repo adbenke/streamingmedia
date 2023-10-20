@@ -230,7 +230,12 @@ audio::-webkit-media-controls-enclosure {
     padding:10px;
     color:#fff;
     text-align: center;
+    
+}
+#yourPlaylists div{
+    display:flex;
     overflow:scroll;
+    background-color: #0D8DFB;
 }
 #playlistsButton p{
     grid-area: button;
