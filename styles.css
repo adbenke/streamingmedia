@@ -133,15 +133,25 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 p,dl,dd{
     font-size:1em;
 }
+#trendingSongs{
+    color:#590242;
+}
 dl{
     display:flex;
     position:relative;
     bottom:10px;
+    padding-top: 5px;
 }
 dt{
     padding-right:5px;
     position:relative;
     bottom:10px;
+    font-style: italic;
+}
+dd{
+    position: relative;
+    right: 20px;
+    bottom: 10px
 }
 audio{
     position:absolute;
@@ -207,9 +217,7 @@ audio::-webkit-media-controls-enclosure {
 #yourPlaylists ::-webkit-scrollbar-thumb:hover, #curatedPlaylists ::-webkit-scrollbar-thumb:hover {
     background: #fff;
 }
-#trendingSongs{
-    color:#590242;
-}
+
 #yourPlaylists{
     display:grid;
     grid-template-areas: 
@@ -225,7 +233,8 @@ audio::-webkit-media-controls-enclosure {
 }
 #yourPlaylists section{
     grid-area: content;
-    background-color: #0D8DFB;
+    background-color: #2699FB;
+    display: grid;
     margin:10px;
     padding:10px;
     color:#fff;
@@ -239,22 +248,43 @@ audio::-webkit-media-controls-enclosure {
 }
 #playlistsButton p{
     grid-area: button;
+    background-color: #590242;
+    padding:20px;
 }
 #curatedPlaylists{
     background-color:#030A8C;
-    display:flex;
-    overflow: scroll;
+    display:grid;
+    grid-template-areas: 
+    "title2"
+    "content2"
+    "button2"
+    ;
 }
 #curatedPlaylists h2{
     background-color:#fff;
+    display: grid;
+    grid-area: title2;
 }
 #curatedPlaylists section{
+    grid-area: content2;
     background-color:#020873;
+    display: grid;
     margin:10px;
     padding:10px;
     color:#fff;
     display:grid;
     text-align: center;
+}
+#curatedPlaylists div{
+    display:flex;
+    overflow:scroll;
+    background-color: #030A8C;
+}
+#curatedButton p{
+    grid-area: button2;
+    background-color: #590242;
+    padding:20px;
+    overflow:hidden;
 }
 footer p{
     font-size:0.75em;
@@ -276,13 +306,32 @@ footer p{
     }
     #trendingSongs{
         grid-column: 1/3;
-        display:flex;
+    }
+    #trendingSongs .more{
+        position: relative;
+        left: 600px;
     }
     #yourPlaylists{
         grid-column: 1/2;
     }
+    #yourPlaylists section{
+        display: flex;
+    }
+    #yourPlaylists div{
+        display: grid;
+    }
+    #playlistsButton p{
+        overflow: hidden;
+    }
     #curatedPlaylists{
         grid-column: 2/3;
+    }
+    #curatedPlaylists section{
+        display: flex;
+    }
+    nav h2{
+        visibility:hidden;
+        height:1px;
     }
     ul{
         overflow: visible;
@@ -291,6 +340,12 @@ footer p{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         list-style:none;
+    }
+    [href="#home"]{
+        position:absolute;
+        top:10px;
+        left:15px;
+        font-size: 2em;
     }
     label span, input{
         display: none;
