@@ -333,6 +333,9 @@ footer p{
         visibility:hidden;
         height:1px;
     }
+    nav li{
+        padding-left: 70px;
+    }
     ul{
         overflow: visible;
         position: absolute;
